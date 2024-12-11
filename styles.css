@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-btn {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.icon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.icon-box {
+    background-color: #fff5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.icon-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-box button:hover {
+    background-color: darkred;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        margin: 10px;
+        flex: 1;
+        max-width: calc(33.333% - 20px);
+    }
+
+    .icon-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon-box {
+        margin: 10px;
+    }
+}
